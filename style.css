@@ -230,7 +230,7 @@ p {
         display: flex;
         justify-content: space-between;
         align-items: center;
-       height: 350px;
+       height: 580px;
         background-color: #f7f7f7;
     }
    
@@ -755,40 +755,36 @@ margin-right: 0;
 
 @media (max-width: 480px) {
     .testimonial-section {
-    border-radius: 10px;
-        width: 45%;
-        height: 300px;
-        margin-left: 10px;
-        margin-right: 10px;
-        box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
-        margin-top: 300px;
+        border-radius: 10px;
+        width: 90%; 
+  margin-top: 250px; 
+     
+        padding: 10px; 
     }
 
-    .testimonial-section .testimonial-title h3 {
-        text-align: start;
-        font-size: 1.5rem;
+    .testimonial-title h3 {
+        font-size: 16px; 
     }
 
-    .testimonial-section .testimonial-title p {
-        text-align: start;
-        font-size: 0.8rem;
+    .testimonial-title p {
+        font-size: 12px; 
     }
 
     .testimonial-card {
-        height: 300px;
+        height: auto; 
+        display: flex;
         flex-direction: column;
-        align-items:flex-start;
-        text-align:start;
+        align-items: flex-start;
+        text-align: start;
         margin-left: 0;
         margin-right: 5px;
-       
     }
 
     .testimonial-card img {
-        width: 30px;
-        height: 30px;
-        border-radius: 16px;
-        margin: 0;
+        width: 50px; /* Adjusted for better visibility */
+        height: 50px;
+        border-radius: 25px; /* Maintain circular shape */
+        margin-bottom: 10px; /* Add some space below the image */
     }
 
     .testimonial-card .content p {
@@ -796,6 +792,7 @@ margin-right: 0;
         margin-left: 0;
     }
 }
+
 /*----------------------------------------------------------logo-------------------------------*/
 .logo-container {
     display: flex;
@@ -920,7 +917,8 @@ margin-top: -20px;
         font-size: 2rem;
     }
     .message-icon img{
-        margin-left: 650px;
+        margin-left: 600px;
+   
        
     }
     .subscription-content {
@@ -948,6 +946,9 @@ margin-top: -20px;
 }
 
 @media (max-width: 480px) {
+    .message-icon{
+      display: none;
+    }
     .subscription-content p {
         font-size: 14px;
     }
