@@ -224,16 +224,28 @@ p {
     
     
 }
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.8rem; 
+        margin-top: 10px;
+    }
+
+    .banner p {
+        font-size: 0.9rem; 
+}}
 @media (max-width: 480px) {
     .banner {
 
         display: flex;
         justify-content: space-between;
         align-items: center;
-       height: 620px;
+       height: 500px;
         background-color: #f7f7f7;
     }
-   
+    .banner .content h1 {
+        font-size: 22px;
+    }
+    
     .content-1 h3{
         font-size: 12px;
     }
@@ -257,16 +269,16 @@ p {
     max-width: 1200px;
     box-sizing: border-box;
 }
-h4, h1 {
+h5, h2 {
     margin: 10px 0;
     text-align: center;
 }
-h1 {
+h2 {
     font-size: 2.5em;
     color: #0d0c0c;
     font-weight: bold;
 }
-h4 {
+h5 {
     font-size: 1.5em;
     color: #666;
     font-weight: bold;
@@ -358,6 +370,12 @@ p{
     }
 }
 @media (max-width: 480px) {
+    .section-3 h5 {
+        font-size: 15px;
+    }
+    .section-3 h2 {
+        font-size: 22px;
+    }
     #feature {
         margin-left: 30px;
         margin-right: 10px;
@@ -371,14 +389,28 @@ p{
     }
 }
 
+
 /*----------------------------------top-destinations-----------------------*/
 .destinations-container {
-    width: 100%;
-    overflow: hidden;
-    padding: 20px;
-    box-sizing: border-box;
+    text-align: center; /* Center align text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Add padding as needed */
 }
-
+.section-2-1 .top-destinations h4
+.section-2-1 .top-destinations h1 {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
 .top-destinations .destinations {
     display: flex;
     flex-wrap: wrap;
@@ -430,14 +462,31 @@ p{
         margin-left: 100px;
         width: calc(50% - 20px); 
     }
+   
 }
 
 @media (max-width: 480px) {
+    .section-2 .top-destinations{
+        text-align: center;
+    }
+    destination-info  {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    .destination-info h5 {
+        font-size: 0.8rem; /* Further reduced font size for mobile screens */
+    }
+    h1 {
+        font-size: 22px;
+    h4 {
+        font-size: 15px; 
+    }
+    justify-content: center;
     .destination-card {
         width: calc(100% - 20px); 
     }
 }
-
+}
 /* ---------------------------next trip-------------------------------------------*/
 
 .next {
@@ -604,6 +653,17 @@ p{
 }
 
 @media (max-width: 480px) {
+    @media (max-width: 480px) {
+        .card-content h2 {
+            font-size: 1.2rem; /* Adjust h2 font size for mobile */
+        }
+        .next-trip-pic-2 h3 {
+            font-size: 1rem; /* Adjust h3 font size for mobile */
+        }
+        .next-trip-pic-2 h5 {
+            font-size: 0.8rem; /* Adjust h5 font size for mobile */
+        }
+    }
     .next {
         margin: 10px 10px;
         margin-bottom: 100px;
@@ -757,42 +817,53 @@ margin-right: 0;
     .testimonial-section {
         border-radius: 10px;
         width: 90%; 
-  margin-top: 250px; 
-     
+        margin-top: 250px; 
         padding: 10px; 
+        flex-direction: column;
     }
-
+    .testimonial-title {
+        text-align: center;
+        width: 100%;
+    }
     .testimonial-title h3 {
         font-size: 16px; 
     }
-
     .testimonial-title p {
         font-size: 12px; 
     }
-
     .testimonial-card {
         height: auto; 
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+      
         text-align: start;
         margin-left: 0;
         margin-right: 5px;
+        padding: 20px;
     }
-
     .testimonial-card img {
         width: 50px; /* Adjusted for better visibility */
         height: 50px;
         border-radius: 25px; /* Maintain circular shape */
         margin-bottom: 10px; /* Add some space below the image */
     }
-
+    .testimonial-card .content {
+        align-items: center;
+        width: 100%;
+    }
     .testimonial-card .content p {
         font-size: 12px;
         margin-left: 0;
+        text-align: center;
+    }
+    .testimonial-card .content .author {
+        margin-top: 15px;
+    }
+    .testimonial-card .content .position {
+        font-size: 12px;
+        color: #6c757d;
     }
 }
-
 /*----------------------------------------------------------logo-------------------------------*/
 .logo-container {
     display: flex;
@@ -917,7 +988,8 @@ margin-top: -20px;
         font-size: 2rem;
     }
     .message-icon img{
-        margin-left: 600px;
+        margin-left: 650px;
+        margin-top: -50px;
    
        
     }
