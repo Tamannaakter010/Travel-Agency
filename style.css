@@ -91,9 +91,7 @@ body {
         width: 100%;
         text-align: center;
     }
-    .mobile-menu-icon{
-        text-decoration: none;
-    }
+    
     .nav-links  {
         margin: 15px 0;
     }
@@ -108,6 +106,22 @@ body {
 }
 
 @media (min-width: 481px) {
+    .dropdown-content a {
+        color: #050404;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ede3e3;
+      
+    }
+    
+    .dropdown:hover .dropdown-content {
+      
+        display: block;
+    }*/
+    
     .nav-links {
         display: flex;
     }
@@ -219,9 +233,7 @@ p {
        height: 350px;
         background-color: #f7f7f7;
     }
-    .content h1{
-        font-size: 15px;
-    }
+   
     .content-1 h3{
         font-size: 12px;
     }
@@ -377,7 +389,7 @@ p{
 .destination-card {
     background: #fff;
     margin: 10px;
-    width: 320px; /* Adjusted for three columns with margin */
+    width: 320px; 
     border-radius: 20px;
     box-shadow: 0 0 15px rgb(192, 241, 241);
     overflow: hidden;
@@ -416,13 +428,13 @@ p{
 @media (max-width: 768px) {
     .destination-card {
         margin-left: 100px;
-        width: calc(50% - 20px); /* Adjusted for two columns with margin */
+        width: calc(50% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .destination-card {
-        width: calc(100% - 20px); /* Single column with margin */
+        width: calc(100% - 20px); 
     }
 }
 
@@ -559,12 +571,12 @@ p{
         position: relative;
         width: 50%;
         height: 80%;
-        margin: 0 auto; /* Center the trip picture */
+        margin: 0 auto; 
     }
 
     .next .next-trip-pic img {
-        width: 100%; /* Adjust the width to fit the parent */
-        height: auto; /* Maintain the aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
 
     .next-trip-pic-2 {
@@ -600,12 +612,12 @@ p{
     .next .next-trip-pic {
         margin-left: 30px;
         width: 80%;
-        height: auto; /* Maintain aspect ratio */
+        height: auto; 
     }
 
     .next .next-trip-pic img {
-        width: 50%; /* Adjust the width to fit the parent */
-        height: auto; /* Maintain aspect ratio */
+        width: 50%; 
+        height: auto; 
     }
 
     .next-trip-pic-2 {
@@ -806,29 +818,29 @@ margin-right: 0;
   } 
   @media (max-width: 768px) {
     .logo-container {
-        flex-wrap: wrap; /* Allow logos to wrap to the next line */
+        flex-wrap: wrap; 
         justify-content: center;
         width: 100%;
         margin: 20px auto;
     }
 
     .logo-container img {
-        max-height: 40px; /* Reduce the height for smaller screens */
+        max-height: 40px; 
         width: 60px;
-        margin: 10px; /* Add margin for spacing */
+        margin: 10px; 
     }
 }
 
 @media (max-width: 480px) {
     .logo-container {
-        flex-direction: column; /* Stack logos vertically on very small screens */
+        flex-direction: column; 
         align-items: center;
     }
 
     .logo-container img {
-        max-height: 30px; /* Further reduce the height for very small screens */
+        max-height: 30px; 
         width: 50px;
-        margin: 10px 0; /* Add vertical margin for spacing */
+        margin: 10px 0; 
     }
 }
 /*-----------------------------------------------------email--------------------------------*/
@@ -839,9 +851,14 @@ margin-right: 0;
 }
 .message-icon{
 margin-left: 770px;
-margin-top: -25px;
+margin-top: -20px;
 }
-
+.message-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+   
+}
 .subscription-content {
     margin: 50px auto; 
     padding: 10px;
@@ -902,7 +919,10 @@ margin-top: -25px;
         text-align: center;
         font-size: 2rem;
     }
-
+    .message-icon img{
+        margin-left: 650px;
+       
+    }
     .subscription-content {
         margin: 20px auto;
         padding: 20px;
