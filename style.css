@@ -392,14 +392,14 @@ p{
 
 /*----------------------------------top-destinations-----------------------*/
 .destinations-container {
-    text-align: center; /* Center align text */
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 800px; /* Adjust maximum width as needed */
-    margin: 0 auto; /* Center horizontally */
-    padding: 20px; /* Add padding as needed */
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 .section-2-1 .top-destinations h4
 .section-2-1 .top-destinations h1 {
@@ -419,6 +419,7 @@ p{
 }
 
 .destination-card {
+   
     background: #fff;
     margin: 10px;
     width: 320px; 
@@ -474,7 +475,7 @@ p{
         gap: 10px; 
     }
     .destination-info h5 {
-        font-size: 0.8rem; /* Further reduced font size for mobile screens */
+        font-size: 0.8rem; 
     }
     h1 {
         font-size: 22px;
@@ -655,13 +656,13 @@ p{
 @media (max-width: 480px) {
     @media (max-width: 480px) {
         .card-content h2 {
-            font-size: 1.2rem; /* Adjust h2 font size for mobile */
+            font-size: 1.2rem; 
         }
         .next-trip-pic-2 h3 {
-            font-size: 1rem; /* Adjust h3 font size for mobile */
+            font-size: 1rem; 
         }
         .next-trip-pic-2 h5 {
-            font-size: 0.8rem; /* Adjust h5 font size for mobile */
+            font-size: 0.8rem; 
         }
     }
     .next {
@@ -842,10 +843,10 @@ margin-right: 0;
         padding: 20px;
     }
     .testimonial-card img {
-        width: 50px; /* Adjusted for better visibility */
+        width: 50px; 
         height: 50px;
-        border-radius: 25px; /* Maintain circular shape */
-        margin-bottom: 10px; /* Add some space below the image */
+        border-radius: 25px; 
+        margin-bottom: 10px; 
     }
     .testimonial-card .content {
         align-items: center;
